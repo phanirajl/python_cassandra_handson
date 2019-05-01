@@ -8,7 +8,7 @@ Este projeto visa ser um Hands-on de um projeto para uma Universidade empregando
 
 ### Cassandra
 
-É necessário que o cassandra 3.13.3 esteja instalado na máquina que irá executar o projeto.
+É necessário que o cassandra 3.11 ou superior esteja acessível.
 Para criar a estrutura de dados necessária para rodar o projeto abre o console `cqlsh` e execute os comandos
 presentes na pasta `./cassandra` seguindo a ordem da numeração.
 
@@ -19,7 +19,7 @@ Após a criação da estrutura no cassandra, siga as instruções para instalar 
 
 ### Python
 
-É necessária que o python 3.6 ou superior esteja instalado na máquina que irá executar o projeto.
+É necessária que o python 3.6 ou superior esteja instalado.
 Para configurar o ambiente clone este repositório e execute os comandos abaixo:
 
 ```bash
