@@ -12,8 +12,10 @@ Este projeto visa ser um Hands-on de um projeto para uma Universidade empregando
 Para criar a estrutura de dados necessária para rodar o projeto abre o console `cqlsh` e execute os comandos
 presentes na pasta `./cassandra` seguindo a ordem da numeração.
 
-1. 01_aluno.cql
-2. 02_aluno_disciplinas.cql
+1. 01_create_keyspace.sql
+2. 02_aluno.cql
+3. 03_aluno_disciplinas.cql
+4. 04_carga_banco.cql
 
 Após a criação da estrutura no cassandra, siga as instruções para instalar as dependências python.
 
