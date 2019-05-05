@@ -34,8 +34,8 @@ class AlunoController():
         :param self: Palavra reservada em Python.
         :return: retorna o objeto JSON do aluno gravado no Banco.
         '''
-        email = AlunoModel()
-        row = email.create(id=self.id, nome=self.nome,
+        aluno = AlunoModel()
+        row = aluno.create(id=self.id, nome=self.nome,
                            telefone=self.telefone, email=self.email,
                            cidade_est=self.cidade_est,
                            curso_matriculado_atual=self.curso_matriculado_atual,

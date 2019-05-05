@@ -105,9 +105,9 @@ class Aluno(Resource):
 
         '''
         data = request.get_json(force=True)
-        id = str(data.get("id")).strip()
+        id = data.get("id")
         nome = str(data.get("nome")).upper()
-        telefone = str(data.get("telefone"))
+        telefone = data.get("telefone")
         email = str(data.get("email")).upper()
         cidade_est = str(data.get("cidade_est")).upper()
         curso_matriculado_atual = str(data.get("curso_matriculado_atual")).upper()
