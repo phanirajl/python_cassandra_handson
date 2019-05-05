@@ -5,4 +5,4 @@ from resources.aluno import Aluno
 api_blueprint = Blueprint("api", __name__)
 api = Api(api_blueprint)
 
-api.add_resource(Email, "/aluno")
+api.add_resource(Aluno, "/aluno")
