@@ -36,4 +36,4 @@ Após a instalação das dependências do projeto é só executá-lo com o coman
 python src/run.py
 ```
 
-Para consultar a documentação dos endpoints da API basta acessar http://0.0.0.0:5000/apidocs
+Para consultar a documentação dos endpoints da API basta acessar http://0.0.0.0:8088/apidocs
