@@ -12,9 +12,9 @@ class AlunoModel(Model):
     __table_name__ = "aluno"
     connection.set_session(carrega_sessao())
 
-    id = columns.Int(primary_key=True)
+    id = columns.Integer(primary_key=True)
     nome = columns.Text(index=True, required=True)
-    telefone = columns.Int(required=True)
+    telefone = columns.Integer(required=True)
     email = columns.Text(required=True)
     cidade_est  = columns.Text(required=True)
     curso_matriculado_atual  = columns.Text(required=True)

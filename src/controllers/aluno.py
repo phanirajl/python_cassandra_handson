@@ -1,3 +1,5 @@
+from models.aluno import AlunoModel, AlunoSchema
+
 class AlunoController():
     def __init__(self, id=None, nome=None, telefone=None, email=None,
         cidade_est=None, curso_matriculado_atual=None, turma=None,

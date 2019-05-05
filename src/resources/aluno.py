@@ -38,7 +38,7 @@ class Aluno(Resource):
 
         '''
         alunos = AlunoController()
-        result = emails.alunos()
+        result = alunos.listar()
 
         if not result:
             abort(404, message="Nenhum registro encontrado na base de dados")
