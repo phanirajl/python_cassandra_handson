@@ -13,11 +13,11 @@ def carrega_sessao():
 
     nodes = data["NODES"].split(",")
     keyspace = data["KEYSPACE"]
-    user = data["USER"]
-    password = data["PASSWORD"]
+#    user = data["USER"]
+#    password = data["PASSWORD"]
 
-    auth_provider = PlainTextAuthProvider(username=str(user), password=str(password))
-    cluster = Cluster(nodes, auth_provider=auth_provider)
+#    auth_provider = PlainTextAuthProvider(username=str(user), password=str(password))
+#    cluster = Cluster(nodes, auth_provider=auth_provider)
+    cluster = Cluster(nodes)
 
     return cluster.connect(keyspace=keyspace)
-

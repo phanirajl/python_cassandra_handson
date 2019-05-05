@@ -20,8 +20,10 @@ class Aluno(Resource):
                 schema:
                     properties:
                         id:
-                            type: string
+                            type: integer
                         nome:
+                            type: string
+                        telefone:
                             type: string
                         email:
                             type: string
@@ -63,7 +65,7 @@ class Aluno(Resource):
                 type: object
                 properties:
                     id:
-                        type: string
+                        type: integer
                         required: True
                         description: id do aluno a ser inserido.
                     nome:
@@ -71,7 +73,7 @@ class Aluno(Resource):
                         required: True
                         description: Nome do aluno a ser inserido.
                     telefone:
-                        type: string
+                        type: integer
                         required: True
                         description: Telefone do aluno a ser inserido.
                     email:
@@ -92,22 +94,24 @@ class Aluno(Resource):
                         description: Turma do aluno a ser inserido.
                     dt_inicio:
                         type: string
+                        format: date-time
                         required: True
                         description: A Data de início do aluno a ser inserido.
                     dt_conclusao_prevista:
                         type: string
+                        format: date-time
                         required: True
                         description: Previsão de conclusão do aluno a ser inserido. Aluno cursando Ciência da Computação tem previsão de concluir em 4 anos da Data de Início.
 
         '''
         data = request.get_json(force=True)
-        id = data.get("id")
-        nome = data.get("nome")
-        telefone = data.get("telefone")
-        email = data.get("email")
-        cidade_est = data.get("cidade_est")
-        curso_matriculado_atual = data.get("curso_matriculado_atual")
-        turma = data.get("turma")
+        id = str(data.get("id")).strip()
+        nome = str(data.get("nome")).upper()
+        telefone = str(data.get("telefone"))
+        email = str(data.get("email")).upper()
+        cidade_est = str(data.get("cidade_est")).upper()
+        curso_matriculado_atual = str(data.get("curso_matriculado_atual")).upper()
+        turma = str(data.get("turma")).upper()
         dt_inicio = data.get("dt_inicio")
         dt_conclusao_prevista = data.get("dt_conclusao_prevista")
 

@@ -27,9 +27,9 @@ class AlunoSchema(Schema):
     '''
     Classe responsável por realizar a serialização da classe para um objeto JSON.
     '''
-    id = fields.Str()
+    id = fields.Integer()
     nome = fields.Str()
-    telefone = fields.Str()
+    telefone = fields.Integer()
     email = fields.Str()
     cidade_est = fields.Str()
     curso_matriculado_atual = fields.Str()
