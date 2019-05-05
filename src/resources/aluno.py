@@ -51,7 +51,7 @@ class Aluno(Resource):
         ---
         operationId: resources.aluno.post
         tags:
-            - email
+            - aluno
         description: Este procedimento recebe os dados do aluno através de um objeto JSON,
                      o qual é inserido no Banco de Dados Cassandra.
         parameters:
