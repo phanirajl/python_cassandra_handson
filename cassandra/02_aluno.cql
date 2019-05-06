@@ -7,8 +7,8 @@ CREATE TABLE aluno
     cidade_est VARCHAR,
     curso_matriculado_atual VARCHAR,
     turma VARCHAR,
-    dt_inicio TIMESTAMP,
-    dt_conclusao_prevista TIMESTAMP,
+    dt_inicio VARCHAR,
+    dt_conclusao_prevista VARCHAR,
     PRIMARY KEY ( id )
 ) ;
 
