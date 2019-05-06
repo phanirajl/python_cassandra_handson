@@ -19,8 +19,8 @@ class AlunoModel(Model):
     cidade_est  = columns.Text(required=True)
     curso_matriculado_atual  = columns.Text(required=True)
     turma  = columns.Text(required=True)
-    dt_inicio = columns.DateTime(required=True)
-    dt_conclusao_prevista = columns.DateTime(required=True)
+    dt_inicio = columns.Text(required=True)
+    dt_conclusao_prevista = columns.Text(required=True)
 
 
 class AlunoSchema(Schema):

@@ -24,7 +24,7 @@ class Aluno(Resource):
                         nome:
                             type: string
                         telefone:
-                            type: string
+                            type: integer
                         email:
                             type: string
                         cidade_est:
@@ -105,6 +105,7 @@ class Aluno(Resource):
 
         '''
         data = request.get_json(force=True)
+
         id = data.get("id")
         nome = str(data.get("nome")).upper()
         telefone = data.get("telefone")

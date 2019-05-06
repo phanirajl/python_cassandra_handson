@@ -35,13 +35,14 @@ class AlunoController():
         :return: retorna o objeto JSON do aluno gravado no Banco.
         '''
         aluno = AlunoModel()
-        row = aluno.create(id=self.id, nome=self.nome,
-                           telefone=self.telefone, email=self.email,
-                           cidade_est=self.cidade_est,
-                           curso_matriculado_atual=self.curso_matriculado_atual,
-                           turma=self.turma,
-                           dt_inicio=self.dt_inicio,
-                           dt_conclusao_prevista=self.dt_conclusao_prevista
+
+        row = aluno.create(id=self.id[0], nome=str(self.nome),
+                           telefone=self.telefone[0], email=str(self.email),
+                           cidade_est=str(self.cidade_est),
+                           curso_matriculado_atual=str(self.curso_matriculado_atual),
+                           turma=str(self.turma),
+                           dt_inicio=str(self.dt_inicio),
+                           dt_conclusao_prevista=str(self.dt_conclusao_prevista)
                            )
 
         schema = AlunoSchema()
