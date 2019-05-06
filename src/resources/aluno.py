@@ -94,12 +94,12 @@ class Aluno(Resource):
                         description: Turma do aluno a ser inserido.
                     dt_inicio:
                         type: string
-                        format: date-time
+                        format: date
                         required: True
                         description: A Data de início do aluno a ser inserido.
                     dt_conclusao_prevista:
                         type: string
-                        format: date-time
+                        format: date
                         required: True
                         description: Previsão de conclusão do aluno a ser inserido. Aluno cursando Ciência da Computação tem previsão de concluir em 4 anos da Data de Início.
 
