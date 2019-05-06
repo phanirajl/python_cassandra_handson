@@ -36,13 +36,13 @@ class AlunoController():
         '''
         aluno = AlunoModel()
 
-        row = aluno.create(id=self.id[0], nome=str(self.nome),
-                           telefone=self.telefone[0], email=str(self.email),
-                           cidade_est=str(self.cidade_est),
-                           curso_matriculado_atual=str(self.curso_matriculado_atual),
-                           turma=str(self.turma),
-                           dt_inicio=str(self.dt_inicio),
-                           dt_conclusao_prevista=str(self.dt_conclusao_prevista)
+        row = aluno.create(id=self.id[0], nome=''.join(self.nome),
+                           telefone=self.telefone[0], email=''.join(self.email),
+                           cidade_est=''.join(self.cidade_est),
+                           curso_matriculado_atual=''.join(self.curso_matriculado_atual),
+                           turma=''.join(self.turma),
+                           dt_inicio=''.join(self.dt_inicio),
+                           dt_conclusao_prevista=''.join(self.dt_conclusao_prevista)
                            )
 
         schema = AlunoSchema()
